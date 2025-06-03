@@ -1,0 +1,60 @@
+.calendar-view {
+  background-color: #f5f7fb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.days-row {
+  display: flex;
+}
+
+.day-column {
+  flex: 1;
+  text-align: center;
+}
+
+.day-name {
+  color: #a4a6b3;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.day-number {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.time-slot {
+  padding: 5px;
+  margin: 5px 2px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #f5f7fb;
+}
+
+.time-slot.empty {
+  color: #a4a6b3;
+}
+
+.time-slot.blue {
+  background-color: #e8f0ff;
+  color: #5d5fef;
+}
+
+.time-slot.purple {
+  background-color: #eee6ff;
+  color: #7b61ff;
+}
+@media (max-width: 768px) {
+  .days-row {
+    overflow-x: auto;
+    min-width: 600px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .day-column {
+    min-width: 80px;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,83 @@
+.schedule-section {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.schedule-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.schedule-day {
+  margin-bottom: 15px;
+}
+
+.schedule-day-title {
+  color: #a4a6b3;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.schedule-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.schedule-card {
+  flex: 1;
+  background-color: #e8f0ff;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.schedule-card-info {
+  flex: 1;
+}
+
+.schedule-card-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.schedule-card-time {
+  color: #7b61ff;
+  font-size: 12px;
+}
+
+.schedule-card-icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkup-icon {
+  background-image: url('https://png.pngtree.com/png-clipart/20210509/original/pngtree-vaccine-syringe-color-vector-icon-png-image_6275545.jpg');
+}
+
+.eye-icon {
+  background-image: url('https://png.pngtree.com/png-clipart/20250509/original/pngtree-eyes-irasutoya-style-japanese-illustration-big-eyes-png-image_20947595.png');
+}
+
+.heart-icon-red {
+  background-image: url('https://img.freepik.com/free-psd/glossy-red-heart-symbol-3d-render-shiny-heart_191095-78483.jpg?semt=ais_hybrid&w=740');
+}
+
+.brain-icon {
+  background-image: url('https://img.freepik.com/premium-vector/doctor-userpic-avatar-icon-illustration_204827-42.jpg');
+}
+@media (max-width: 600px) {
+  .schedule-cards {
+    flex-direction: column;
+  }
+  .schedule-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}

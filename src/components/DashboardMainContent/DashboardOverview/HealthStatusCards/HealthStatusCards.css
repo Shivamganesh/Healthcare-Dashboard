@@ -1,0 +1,105 @@
+.body-parts-container {
+  width: 50%; /* Reduced from 45% to fit beside anatomy */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.body-parts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.organ-square {
+  background-color: #f5f7fb;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.part-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 18px;
+  margin-bottom: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lungs-icon {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/023/352/175/non_2x/lungs-cartoon-illustration-lungs-icon-lungs-flat-design-cartoon-illustration-of-human-organs-free-png.png); 
+}
+
+.teeth-icon {
+  background-image: url(https://pngimg.com/d/teeth_PNG103545.png); 
+}
+
+.bone-icon {
+  background-image: url('https://i.pinimg.com/736x/94/4c/53/944c53aa08ea40fb583bc376c6338da6.jpg'); 
+}
+
+.part-info {
+  flex: 1;
+}
+
+.part-name {
+  font-weight: 600;
+  margin-top: 19px;
+}
+
+.part-date {
+  color: #a4a6b3;
+  font-size: 12px;
+  padding-top: 30px;
+  margin-left: -60px;
+}
+
+.progress-bar {
+  height: 6px;
+  width: 160%;
+  margin-left: -60px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #013baf15;
+}
+
+.progress-bar1 {
+  height: 5px;
+  width: 70%;
+  border-radius: 3px;
+}
+
+.red {
+  background-color: #be3939;
+}
+
+.green {
+  background-color: #00d2c9;
+}
+
+.orange {
+  background-color: rgb(255, 81, 0);
+}
+
+@media (max-width: 600px) {
+  .body-parts-grid {
+    width: 100%;
+  }
+  .organ-square {
+    flex-direction: row;
+    align-items: center;
+  }
+  .part-icon {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .part-info {
+    flex: 1;
+  }
+}

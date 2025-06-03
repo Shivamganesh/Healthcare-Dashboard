@@ -1,0 +1,75 @@
+.appointments-section {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.appointment-card1 {
+  border-radius: 20px;
+  width: 37%;
+  padding: 15px;
+  display: flex;
+  margin-left: 10px;
+}
+
+.appointment-card2 {
+  border-radius: 20px;
+  width: 55%;
+  padding: 15px;
+  display: flex;
+}
+
+.appointment-card1.dentist {
+  background-color: #5d5fef;
+  color: white;
+}
+
+.appointment-card2.physio {
+  background-color: #e8f0ff;
+  color: #333;
+}
+
+.appointment-info {
+  flex: 1;
+}
+
+.appointment-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.appointment-time,
+.appointment-doctor {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.appointment-icon {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.teeth-icon-white {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(https://pngimg.com/d/teeth_PNG103545.png);
+}
+
+.physio-icon {
+  background-image: url(https://w7.pngwing.com/pngs/816/640/png-transparent-iphone-apple-color-emoji-sticker-world-muscle-electronics-hand-arm.png);
+}
+
+@media (max-width: 600px) {
+  .appointment-card1,
+  .appointment-card2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .appointment-icon {
+    margin-top: 10px;
+  }
+}
